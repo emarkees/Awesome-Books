@@ -4,30 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>AwesomeBooks</title>
 </head>
 <body>
-  <container>
+  <main>
 
-   
-    <h1 id="headerr" class="title">Awesome books</h1>
-    <div class="yemi" id="yemi">
-   
+    <h1 id="header" class="header">Awesome books</h1>
+    <div class="book-list-container">
+      <div class="book-list" id="book-list"></div>
     </div>
     
-    <br>
+  </main>
+  <br>
     <form action="index.html" method="post">
-      <input type="text" name="array[]" value="" class="title"  id="title" placeholder="Title">
-      <br> <br>
-      <input type="text" name="array[]" value="" class="author" id="author" placeholder="Author">
-      <br> <br>
+      <input type="text" class="title"  id="title" placeholder="Title">
+      <br> 
+      <input type="text" class="author" id="author" placeholder="Author">
+      <br> 
       <button type="button" name="button" class="add-btn" onclick="sub" ()>add</button>
     </form>
 
-  </container>
-  <p id="par"></p>
  
-
   <script src="script.js"></script>
 </body>
 </html>
