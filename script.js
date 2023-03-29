@@ -1,5 +1,5 @@
 const form = document.querySelector('form');
-let books = [];
+let books = JSON.parse(localStorage.getItem('createdBooks')) || [];
 
 function handleSubmit(event) {
   // Prevent default form submission behavior
@@ -20,6 +20,12 @@ function handleSubmit(event) {
 
   titleInput.value = '';
   authorInput.value = '';
+
+  localStorage.setItem('createdBooks', JSON.stringify(books));
+    title.value = ' ';
+    author.value = ' ';
+
+
     
 }
 form.addEventListener('submit', handleSubmit);
@@ -35,7 +41,7 @@ function displayBooks() {
     
     <strong>Title: <h3>${book.title}</h3></strong>
    
-    <strong>Author:</strong><p>${book.author}</p>
+    <strong>Author:<p>${book.author}</p></strong>
     
     <button class="delete-button" data-index="${index}">Delete</button>`;
     bookList.appendChild(bookDiv);
@@ -43,3 +49,14 @@ function displayBooks() {
   });
 
 }
+
+function handleDelete (event) {
+  
+  if (event.target.classList.contains('delete-button')) {
+    const index = event.target.dataset.index;
+    books.splice(index, 1);
+  }
+  bookList.addEventListener('click', handleDelete)
+  displayBooks();
+};
+
