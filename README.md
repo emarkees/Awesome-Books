@@ -20,7 +20,7 @@
 
 # 📖 Awesome books <a name="about-project"></a>
 
-In this project, we will build a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We needed to dynamically modify the DOM and added basic events. We will be using them in all Microverse projects and most likely in my future job as well, so it is important to know them!
+In this project, we will build a basic website using medium-fidelity wireframes to create a UI, that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We needed to dynamically modify the DOM and added basic events. We will be using them in all Microverse projects and most likely in my future job as well, so it is important to know them!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,6 +56,7 @@ In this project, we will build a basic website that allows users to add/remove b
 - **Javascript events**
 - **Use objects to store and access data**
 - **Use localStorage**
+- **Create class methods to add and remove books**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
