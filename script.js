@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $books.insertAdjacentHTML(
         'beforeend',
         `
+<<<<<<< HEAD
         <div class="itemContainer">
           <p>"
             ${item.title}" by ${item.author}
@@ -44,6 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <hr>
         </div>
         `,
+=======
+        <div class="itemContainer"><p>"${item.title}" by ${item.author}</p><button type="button" class="remove" id="${item.title}${item.author}">Remove</button></div>
+      `,
+>>>>>>> 9b65deb9be1572a0b181ce6c7a4d815c442d34e5
       );
       localStorage.setItem('bookList', JSON.stringify(this.bookList));
       const $removeButton = document.getElementById(`${item.title}${item.author}`);
